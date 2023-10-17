@@ -7,10 +7,12 @@ class PattenAnimator
 
     Update(time, array)
     {
-        for (let i = 0; i < colorArray.count; i++)
+        for (let i = 0; i < array.length; i++)
         {
-            colorArray[i] = 0xff0000;
+            array[i] = 0xff0000;
         }
+
+        return array;
     }
 }
 
