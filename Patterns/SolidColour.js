@@ -1,4 +1,4 @@
-const {Colour} = require("./Colour.js");
+const {Colour} = require("../LEDs/Colour");
 
 class Patten_SolidColour
 {
