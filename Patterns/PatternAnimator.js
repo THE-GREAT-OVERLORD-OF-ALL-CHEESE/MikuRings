@@ -1,4 +1,4 @@
-const { Time } = require('./Time/Time');
+const { Time } = require('../Time/Time');
 
 class PattenAnimator
 {
