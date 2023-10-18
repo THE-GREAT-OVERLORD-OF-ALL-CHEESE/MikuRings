@@ -1,4 +1,4 @@
-const {Math} = require("../Time/Math");
+const {Clamp} = require("../Time/Math");
 
 class Colour
 {
