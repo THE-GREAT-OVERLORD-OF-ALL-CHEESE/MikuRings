@@ -44,9 +44,9 @@ class Colour
 
 	ToHex(r, g, b)
 	{
-    	outR = Math.round(Clamp(r, 0, 1) * 255);
-    	outG = Math.round(Clamp(g, 0, 1) * 255);
-    	outB = Math.round(Clamp(b, 0, 1) * 255);
+    	let outR = Math.round(Clamp(r, 0, 1) * 255);
+    	let outG = Math.round(Clamp(g, 0, 1) * 255);
+    	let outB = Math.round(Clamp(b, 0, 1) * 255);
 
     	return (outR << 16) + (outG << 8) + outB;
 	}
