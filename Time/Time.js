@@ -1,6 +1,6 @@
 class Time
 {
-    constructor()
+    static Init()
 	{
         this.startTime = Date.now();
 

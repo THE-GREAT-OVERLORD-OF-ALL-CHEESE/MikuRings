@@ -22,7 +22,7 @@ pattern.pattern = new Patten_SolidColour(new Colour(1,1,1));
 let startTime = Date.now();
 let timeMs = Date.now();
 
-time = new Time();
+Time.Init();
 
 Main();
 
