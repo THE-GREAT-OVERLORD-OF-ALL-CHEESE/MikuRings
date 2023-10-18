@@ -1,8 +1,8 @@
 class PattenAnimator
 {
-	constructor()
+	constructor(pattern)
 	{
-		this.pattern = null;
+		this.pattern = pattern;
 	}
 
     Update(time, array)
