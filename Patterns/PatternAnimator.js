@@ -9,7 +9,7 @@ class PattenAnimator
     {
         for (let i = 0; i < array.length; i++)
         {
-            array[i] = pattern.EvaluateColour(time, null).ToHex();
+            array[i] = pattern.EvaluateColour(Time.GetTime(), null).ToHex();
         }
 
         return array;
