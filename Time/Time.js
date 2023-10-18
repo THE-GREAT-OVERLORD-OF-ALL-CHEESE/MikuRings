@@ -1,30 +1,32 @@
 class Time
 {
+    static startTime = 0;
+    
+    static time = 0;
+
+    static deltaTime = 0;
+    static deltaTimeMs = 0;
+
     static Init()
 	{
-        this.startTime = Date.now();
-
-        this.time = 0;
-
-        this.deltaTime = 0;
-        this.deltaTimeMs = 0;
+        startTime = Date.now();
 	}
     
     static Tick()
     {
-        this.deltaTimeMs = Date.now() - timeMs;
-        this.deltaTime = deltaTimeMs / 1000;
-        this.time = (Date.now() - startTime) / 1000;
+        deltaTimeMs = Date.now() - timeMs;
+        deltaTime = deltaTimeMs / 1000;
+        time = (Date.now() - startTime) / 1000;
     }
     
     static GetTime()
     {
-        return this.time;
+        return time;
     }
     
     static GetDeltaTime()
     {
-        return this.deltaTime;
+        return deltaTime;
     }
 }
 
