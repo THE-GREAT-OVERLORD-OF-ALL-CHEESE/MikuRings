@@ -9,24 +9,24 @@ class Time
 
     static Init()
 	{
-        startTime = Date.now();
+        Time.startTime = Date.now();
 	}
     
     static Tick()
     {
-        deltaTimeMs = Date.now() - timeMs;
-        deltaTime = deltaTimeMs / 1000;
-        time = (Date.now() - startTime) / 1000;
+        Time.deltaTimeMs = Date.now() - timeMs;
+        Time.deltaTime = deltaTimeMs / 1000;
+        Time.time = (Date.now() - startTime) / 1000;
     }
     
     static GetTime()
     {
-        return time;
+        return Time.time;
     }
     
     static GetDeltaTime()
     {
-        return deltaTime;
+        return Time.deltaTime;
     }
 }
 
