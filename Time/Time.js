@@ -27,3 +27,5 @@ class Time
         return deltaTime;
     }
 }
+
+module.exports = {Time}

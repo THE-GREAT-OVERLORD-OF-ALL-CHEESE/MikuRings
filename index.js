@@ -1,4 +1,5 @@
 const ws281x = require('rpi-ws281x-native');
+const { Time } = require('./Time/Time');
 const { Colour } = require('./LEDs/Colour');
 const { PattenAnimator } = require('./Patterns/PatternAnimator');
 const { Patten_SolidColour } = require('./Patterns/SolidColour');
