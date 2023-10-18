@@ -1,3 +1,5 @@
+const {Math} = require("../Time/Math");
+
 class Colour
 {
 	constructor(r = 0, g = 0, b = 0)

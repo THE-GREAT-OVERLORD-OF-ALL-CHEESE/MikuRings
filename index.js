@@ -43,8 +43,3 @@ function Main()
     //console.log(colorArray);
     setTimeout(Main, 10);
 }
-
-function Clamp(val, min, max)
-{
-    return Math.min(Math.max(val, min), max)
-}
