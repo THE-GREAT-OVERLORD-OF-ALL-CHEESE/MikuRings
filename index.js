@@ -17,8 +17,9 @@ const channel = ws281x(2, options);
 
 let colorArray = channel.array;
 
-let pattern = new PattenAnimator();
+let pattern = new PattenAnimator(null);
 pattern.pattern = new Patten_SolidColour(new Colour(1,1,1));
+console.log(pattern);
 
 let startTime = Date.now();
 let timeMs = Date.now();
