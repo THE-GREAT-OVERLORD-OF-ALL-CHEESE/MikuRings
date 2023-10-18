@@ -17,9 +17,9 @@ const channel = ws281x(2, options);
 
 let colorArray = channel.array;
 
-let pattern = new PattenAnimator(null);
-pattern.pattern = new Patten_SolidColour(new Colour(1,1,1));
-console.log(pattern);
+let patternAnim = new PattenAnimator(null);
+patternAnim.pattern = new Patten_SolidColour(new Colour(1,1,1));
+console.log(patternAnim);
 
 let startTime = Date.now();
 let timeMs = Date.now();
@@ -36,7 +36,8 @@ function Main()
 
     timeMs = Date.now();
 
-    colorArray = pattern.Update(time, colorArray);
+    console.log(patternAnim);
+    colorArray = patternAnim.Update(time, colorArray);
 
     ws281x.render();
     //console.log(colorArray);
