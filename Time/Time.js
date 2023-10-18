@@ -19,12 +19,12 @@ class Time
     
     static GetTime()
     {
-        return time;
+        return this.time;
     }
     
     static GetDeltaTime()
     {
-        return deltaTime;
+        return this.deltaTime;
     }
 }
 
