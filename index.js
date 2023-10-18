@@ -38,15 +38,6 @@ function Main()
     setTimeout(Main, 10);
 }
 
-function RGBToHex(r, g, b)
-{
-    r = Clamp(Math.round(r), 0, 255);
-    g = Clamp(Math.round(g), 0, 255);
-    b = Clamp(Math.round(b), 0, 255);
-
-    return (r << 16) + (g << 8) + b;
-}
-
 function Clamp(val, min, max)
 {
     return Math.min(Math.max(val, min), max)

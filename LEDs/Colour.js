@@ -39,6 +39,15 @@ class Colour
 		this.g /= colour.g;
 		this.b /= colour.b;
 	}
+
+	ToHex(r, g, b)
+	{
+    	outR = Math.round(Clamp(r, 0, 1) * 255);
+    	outG = Math.round(Clamp(g, 0, 1) * 255);
+    	outB = Math.round(Clamp(b, 0, 1) * 255);
+
+    	return (outR << 16) + (outG << 8) + outB;
+	}
 }
 
 module.exports = {Colour}
