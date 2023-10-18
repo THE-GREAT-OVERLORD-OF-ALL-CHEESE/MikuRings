@@ -1,3 +1,5 @@
+const { Time } = require('./Time/Time');
+
 class PattenAnimator
 {
 	constructor(pattern)
